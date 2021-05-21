@@ -80,7 +80,7 @@ class BeanDefinitionLoader {
 		Assert.notEmpty(sources, "Sources must not be empty");
 		this.sources = sources;
 		this.annotatedReader = new AnnotatedBeanDefinitionReader(registry);
-		this.xmlReader = new XmlBeanDefinitionReader(registry);
+		this.xmlReader = new XmlBeanDefinitionReader(registry);+
 		if (isGroovyPresent()) {
 			this.groovyReader = new GroovyBeanDefinitionReader(registry);
 		}
